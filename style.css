@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,6 @@ body {
     border-radius: 30px;
     padding: 0rem 5rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
-
 }
 
 .sneaker {
@@ -49,11 +47,7 @@ body {
 .circle {
     width: 15rem;
     height: 15rem;
-    background: linear-gradient(
-        to right,
-        rgba(245, 70, 66, 0.75),
-        rgba(8, 83, 156, 0.75)
-    );
+    background: linear-gradient( to right, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75));
     position: absolute;
     border-radius: 50%;
     z-index: 1;
@@ -109,4 +103,37 @@ button.active {
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .card {
+        padding: 0rem 1.2rem;
+        width: 90%;
+        height: fit-content;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .sneaker {
+        width: 100%;
+    }
+    .sneaker img {
+        width: 100%;
+    }
+    .circle {
+        width: 62vw;
+        height: 32vh;
+    }
+    .sizes {
+        flex-wrap: wrap;
+    }
+    .sizes button {
+        margin-bottom: 1.5rem;
+    }
+    .purchase {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
